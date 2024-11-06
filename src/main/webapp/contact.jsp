@@ -5,29 +5,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<%@ include file="/views/fragment/head.html"%>
 <link rel="stylesheet" type="text/css"
 	href="<%=request.getContextPath()%>/views/assets/styles/style.css" />
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-	integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-	crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-	crossorigin="anonymous" />
 <style>
-	.contact-introduce-background{
-		background-image:url('<%=request.getContextPath()%>/views/assets/images/roivnrg.png');
-	}
+.contact-introduce-background {
+	background-image:
+		url('<%=request.getContextPath()%>/views/assets/images/roivnrg.png');
+}
 </style>
 <title>Contact us</title>
 </head>
 <body>
-	<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-		crossorigin="anonymous"></script>
+
 	<!-- Header -->
 	<jsp:include page="/views/fragment/header.html" />
 	<!-- Nội dung -->
@@ -41,7 +31,9 @@
 		</div>
 		<div class="contact-content">
 			<div class="contact-image">
-				<img src="<%=request.getContextPath()%>/views/assets/images/kgbngk.png" alt="Hình ảnh quán cà phê" />
+				<img
+					src="<%=request.getContextPath()%>/views/assets/images/kgbngk.png"
+					alt="Hình ảnh quán cà phê" />
 			</div>
 			<div class="contact-info">
 				<div class="contact-info-introduce">
@@ -50,12 +42,16 @@
 				</div>
 				<div class="contact-info-method">
 					<div class="contact-info-phone">
-						<img src="<%=request.getContextPath()%>/views/assets/images/phone-call.png" alt="" />
+						<img
+							src="<%=request.getContextPath()%>/views/assets/images/phone-call.png"
+							alt="" />
 						<p>0949617948</p>
 					</div>
 
 					<div class="contact-info-message">
-						<img src="<%=request.getContextPath()%>/views/assets/images/messenger.png" alt="" />
+						<img
+							src="<%=request.getContextPath()%>/views/assets/images/messenger.png"
+							alt="" />
 						<p>anhkhoaxn11@gmail.com</p>
 					</div>
 				</div>
@@ -100,6 +96,6 @@
 	</div>
 	<!-- Footer -->
 	<jsp:include page="/views/fragment/footer.html" />
-	
+
 </body>
 </html>
